@@ -34,7 +34,21 @@ body {
     display: flex;
 }
 
-#tab1, #tab2 {
+.kaiteki-and-teishi-ctl, .temp-ctl, .hum-ctl {
+    display: flex;
+    flex-direction: column; /* 縦一列に並べる */
+    align-items: center; /* 中央寄せ */
+    width: 100%;
+}
+
+.temp-and-hum-ctl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#tab1, #tab2, #tab3, #tab3 .kaiteki-and-teishi-ctl {
     flex-direction: column; /* 縦一列に並べる */
     align-items: center; /* 中央寄せ */
 }
