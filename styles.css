@@ -41,20 +41,33 @@ body {
     width: 100%;
 }
 
-.temp-and-hum-ctl {
+.sep-rl {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-#tab1, #tab2, #tab3, #tab3 .kaiteki-and-teishi-ctl {
+#tab1, #tab2, #tab3, #tab3 {
     flex-direction: column; /* 縦一列に並べる */
     align-items: center; /* 中央寄せ */
 }
 
 #tab1 button, #tab2 button, #tab3 .kaiteki-and-teishi-ctl button {
     width: 200px; /* ボタンの幅を同じにする */
+    padding: 15px 20px; /* パディング */
+    margin: 10px; /* マージン */
+    border: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    cursor: pointer; /* カーソルをポインターにする */
+    font-size: 16px; /* フォントサイズ */
+    transition: background-color 0.3s ease; /* 背景色の変化にトランジションを追加 */
+}
+
+.sep-rl button {
+    width: 120px; /* ボタンの幅を同じにする */
     padding: 15px 20px; /* パディング */
     margin: 10px; /* マージン */
     border: solid;
